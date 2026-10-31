@@ -1,0 +1,45 @@
+JAVA BANKING SYSTEM — SAMPLE DEMO
+==================================
+
+This is an example of the output produced by DemoRunner.java.
+IDs and transaction IDs may vary if the implementation or output is changed.
+
+$ java banking.DemoRunner
+
+Database tables created successfully!
+
+=== JAVA BANKING SYSTEM: AUTOMATED DEMO ===
+
+[1] Creating sample accounts...
+Created account: Alice Demo (ID: 1, opening balance: ₹10,000)
+Created account: Bob Demo   (ID: 2, opening balance: ₹5,000)
+
+[2] Depositing ₹2,500 into Alice's account...
+Deposit successful.
+
+[3] Withdrawing ₹1,000 from Alice's account...
+Withdrawal successful.
+
+[4] Transferring ₹3,000 from Alice to Bob...
+Transfer successful.
+
+[5] Final account balances
+----------------------------------------
+ID: 1 | Name: Alice Demo | Balance: ₹8,500
+ID: 2 | Name: Bob Demo   | Balance: ₹8,000
+
+Total accounts: 2
+Total balance: ₹16,500
+
+[6] Recent transactions
+----------------------------------------
+#3 TRANSFER | Alice Demo -> Bob Demo | ₹3,000
+#2 WITHDRAW | Alice Demo -> -        | ₹1,000
+#1 DEPOSIT  | -          -> Alice Demo | ₹2,500
+
+=== DEMO COMPLETED ===
+
+Notes:
+- DemoRunner recreates banking-demo.db each time it runs, so balances and transaction IDs start fresh.
+- The regular banking.db file is not used or deleted by this demo.
+- This is a sample session. Your exact console formatting may differ.
